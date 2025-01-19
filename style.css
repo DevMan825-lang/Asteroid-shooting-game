@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      overflow: hidden;
+      
+    }
+
+    #game-container {
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+
+    #gameCanvas {
+      background-color: #111;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #fff;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+      background: url("background.webp");
+      background-size:cover;
+      filter:grayscale(20%);
+    }
+
+    #scoreboard {
+      font-size: 24px;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+    }
+
+    .score {
+      font-size: 30px;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 0 10px #00ff00;
+      position: relative;
+      top: 50%;
+    }
+
+    .controller {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+    }
+
+    .controller button {
+      background-color: #333;
+      color: #fff;
+      border: 2px solid #fff;
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+      cursor: pointer;
+    }
+
+    .controller button:active {
+      background-color: #555;
+    }
+
+    .controller button:focus {
+      outline: none;
+    }
+
+    .controller .fire {
+      background-color: #f00;
+    }
+    .perform{
+      color:yellow;
+      font-size:20px;
+      text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+      font-weight:bold;
+    }
+    #highestScore{
+      font-size:15px;
+      margin-right:200px;
+    }
+    #playerScore{
+      display:inline;
+      font-size:15px;
+      margin-left:200px;
+    }
+    @media(max-width:768px){
+      h1 {
+      font-family: 'Courier New', Courier, monospace;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+      font-size:20px;
+    }
+    }

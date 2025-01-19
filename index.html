@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroid Shooting Game</title>
+  
+  <link rel="stylesheet" href="style.css"/> 
+</head>
+
+<body>
+  <div id="game-container">
+    <h1>Asteroid Shooting Game<br>by Gourav Talukdar</h1>
+    <canvas id="gameCanvas"></canvas>
+    <div id="scoreboard" class="score"> 
+      <br><br><br> 
+      <div id="highestScore">Highest Score: 0</div> 
+      <p id="demo" class="perform"></p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <div class="controller">
+      <button id="leftBtn">←</button>
+      <button id="rightBtn">→</button>
+      <button id="fireBtn" class="fire">🔫</button>
+    </div>
+  </div>
+
+  <audio id="shootSound" src="shoot.mp3"></audio>
+  <audio id="burstSound" src="burst.mp3"></audio>
+  <audio id="appSound" src="App.mp3"></audio>
+
+<script src="script.js"></script> 
+</body>
+</html>
